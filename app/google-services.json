@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "420953468135",
+    "project_id": "fir-realdb-d035c",
+    "storage_bucket": "fir-realdb-d035c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420953468135:android:4f523ac4d676c96a8ec642",
+        "android_client_info": {
+          "package_name": "com.example.firebaserealdb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420953468135-asruq1m8kgu7li2naut5g5raq3jj5ikn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwlC0CYkAJweH5PbhTkse_vqVlWajIMxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420953468135-asruq1m8kgu7li2naut5g5raq3jj5ikn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

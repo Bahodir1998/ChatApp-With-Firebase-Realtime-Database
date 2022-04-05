@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.firebaserealdb.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.firebaserealdb.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.firebaserealdb.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_chatsFragment"
+            app:destination="@id/chatsFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_groupsFragment"
+            app:destination="@id/groupsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.example.firebaserealdb.ChatsFragment"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chats" >
+        <action
+            android:id="@+id/action_chatsFragment_to_singleChatFragment"
+            app:destination="@id/singleChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="com.example.firebaserealdb.GroupsFragment"
+        android:label="fragment_groups"
+        tools:layout="@layout/fragment_groups" />
+    <fragment
+        android:id="@+id/singleChatFragment"
+        android:name="com.example.firebaserealdb.SingleChatFragment"
+        android:label="fragment_single_chat"
+        tools:layout="@layout/fragment_single_chat" >
+        <action
+            android:id="@+id/action_singleChatFragment_to_chatgroupFragment"
+            app:destination="@id/chatgroupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatgroupFragment"
+        android:name="com.example.firebaserealdb.ChatgroupFragment"
+        android:label="fragment_chatgroup"
+        tools:layout="@layout/fragment_chatgroup" />
+</navigation>
