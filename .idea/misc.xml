@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/bahod/AndroidStudioProjects/FirebaseRealDb/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1255" />
         <entry key="..\:/Users/bahod/AndroidStudioProjects/FirebaseRealDb/app/src/main/res/drawable/back.xml" value="0.11" />
         <entry key="..\:/Users/bahod/AndroidStudioProjects/FirebaseRealDb/app/src/main/res/drawable/dialog_corner.xml" value="0.112" />
         <entry key="..\:/Users/bahod/AndroidStudioProjects/FirebaseRealDb/app/src/main/res/drawable/edit_text_border.xml" value="0.112" />
         <entry key="..\:/Users/bahod/AndroidStudioProjects/FirebaseRealDb/app/src/main/res/drawable/from_back.xml" value="0.112" />
         <entry key="..\:/Users/bahod/AndroidStudioProjects/FirebaseRealDb/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.11" />
         <entry key="..\:/Users/bahod/AndroidStudioProjects/FirebaseRealDb/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.11" />
+        <entry key="..\:/Users/bahod/AndroidStudioProjects/FirebaseRealDb/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/bahod/AndroidStudioProjects/FirebaseRealDb/app/src/main/res/drawable/ic_user.xml" value="0.111" />
         <entry key="..\:/Users/bahod/AndroidStudioProjects/FirebaseRealDb/app/src/main/res/drawable/linear_back.xml" value="0.111" />
         <entry key="..\:/Users/bahod/AndroidStudioProjects/FirebaseRealDb/app/src/main/res/drawable/oval.xml" value="0.112" />

@@ -11,4 +11,5 @@
     <color name="button2">#E5E5E5</color>
     <color name="text_color">#848484</color>
     <color name="offline">#585A5E</color>
+    <color name="primary">#59D896</color>
 </resources>

@@ -1,6 +1,8 @@
 package com.example.firebaserealdb
 
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -13,8 +15,12 @@ import com.example.firebaserealdb.databinding.FragmentChatsBinding
 import com.example.firebaserealdb.models.Message
 import com.example.firebaserealdb.models.OnlineUser
 import com.example.firebaserealdb.models.User
+import com.example.firebaserealdb.utils.AppUtil
+import com.example.firebaserealdb.utils.SharedPref
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.google.firebase.messaging.FirebaseMessaging
 
 class ChatsFragment : Fragment() {
 
@@ -38,13 +44,16 @@ class ChatsFragment : Fragment() {
         reference = fireBaseDatabase.getReference("users")
         referenceOnline = fireBaseDatabase.getReference("online")
 
+        SharedPref.init(requireContext())
         val email = currentUser?.email
         val displayName = currentUser?.displayName
         val phoneNumber = currentUser?.phoneNumber
         val photoUrl = currentUser?.photoUrl
+        val token = SharedPref.read(SharedPref.TOKEN,"")
         val uid = currentUser?.uid
 
-        val user = User(email,displayName,phoneNumber,photoUrl.toString(),uid)
+        Log.d("TG", "onCreateView: $token")
+        val user = User(email,displayName,phoneNumber,photoUrl.toString(),token,uid)
         reference.child(uid!!).setValue(user)
         val onlineUser = OnlineUser(1,uid)
         referenceOnline.child(uid).setValue(onlineUser)
